@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tracking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="dashboard.html" class="logo">
+    <img src="asset/logo.png" alt="UT Logo">
+    </a>
+   <ul class="nav-menu">
+    <li>
+        <a href="stok.html">
+            <i class="fa-solid fa-box"></i> Informasi Bahan Ajar
+        </a>
+    </li>
+    <li>
+        <a href="tracking.html">
+            <i class="fa-solid fa-magnifying-glass"></i> Tracking
+        </a>
+    </li>
+    <li class="dropdown">
+        <a href="#">
+            <i class="fa-solid fa-chart-column"></i> Laporan
+        </a>
+        <div class="dropdown-content">
+            <a href="#">
+                <i class="fa-solid fa-truck"></i> Monitoring Progress DO
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-file-lines"></i> Rekap Bahan Ajar
+            </a>
+        </div>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-clock-rotate-left"></i> Histori
+        </a>
+    </li>
+</ul>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+<div class="container">
+
+    <h2>Tracking Pengiriman</h2>
+
+    <input type="text" id="do" placeholder="Masukkan Nomor DO">
+    <button onclick="cari()">Cari</button>
+
+    <div id="hasil"></div>
+
+    <a href="dashboard.html">⬅ Kembali</a>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

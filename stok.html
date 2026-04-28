@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stok</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="dashboard.html" class="logo">
+    <img src="asset/logo.png" alt="UT Logo">
+    </a>
+   <ul class="nav-menu">
+    <li>
+        <a href="stok.html">
+            <i class="fa-solid fa-box"></i> Informasi Bahan Ajar
+        </a>
+    </li>
+    <li>
+        <a href="tracking.html">
+            <i class="fa-solid fa-magnifying-glass"></i> Tracking
+        </a>
+    </li>
+    <li class="dropdown">
+        <a href="#">
+            <i class="fa-solid fa-chart-column"></i> Laporan
+        </a>
+        <div class="dropdown-content">
+            <a href="#">
+                <i class="fa-solid fa-truck"></i> Monitoring Progress DO
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-file-lines"></i> Rekap Bahan Ajar
+            </a>
+        </div>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-clock-rotate-left"></i> Histori
+        </a>
+    </li>
+</ul>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+
+<div class="container">
+
+    <h1>Stok Bahan Ajar</h1>
+
+    <button onclick="toggleForm()">+ Tambah Data</button>
+
+<div id="formTambah" style="display:none; margin-top:10px;">
+    <input type="text" id="kodeBaru" placeholder="Kode Barang">
+    <input type="text" id="namaBaru" placeholder="Nama Buku">
+    <input type="text" id="jenisBaru" placeholder="Jenis Barang">
+    <input type="text" id="edisiBaru" placeholder="Edisi">
+    <input type="number" id="stokBaru" placeholder="Jumlah Stok">
+    <input type="text" id="lokasiBaru" placeholder="Lokasi">
+    <input type="file" id="coverBaru" accept="image/*">
+
+    <button onclick="tambahData()">Simpan</button>
+</div>
+
+    <div id="stokList" class="stok-grid"></div>
+
+    <a href="dashboard.html">⬅ Kembali</a>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
