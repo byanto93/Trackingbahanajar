@@ -27,7 +27,7 @@ const logout = document.getElementById("logoutBtn");
 if (logout) {
     logout.onclick = function(){
         localStorage.removeItem("namaUser");
-        window.location = "login.html";
+        window.location = "index.html";
     }
 }
 
